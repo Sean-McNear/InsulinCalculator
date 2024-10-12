@@ -1,0 +1,18 @@
+Brief Problem Decomposition:
+
+    1. Get blood glucose (BG) level in mg/dL
+        a. Get target BG
+    2. Get ketone level and assign each level to a multiplier
+    3. Get number of carbs
+    4. Calculate BG correction
+    5. Get insulin-to-carb ratio (1 unit : x carbs)
+    6. Calculate insulin required based on BG, ketones, carbs, and ICR
+    7. Print units of insulin required
+
+
+
+Formulae:
+
+    (4) Blood sugar level correction = (BG - target BG) / correction factor
+
+    (6) Insulin required = (carbs / ICR + Blood sugar level correction) * ketone multiplier
